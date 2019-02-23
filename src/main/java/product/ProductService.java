@@ -21,13 +21,13 @@ public class ProductService {
 
         if (discountType.equals(DiscountType.EASTER)) {
             productStrategy = new StrategyChristmas();
-            productStrategy.countDiscount(product);
+            productStrategy.countDiscount(product.getCost());
         } else if (discountType.equals(DiscountType.CHRISTMAS)) {
             productStrategy = new StrategyEaster();
-            productStrategy.countDiscount(product);
+            productStrategy.countDiscount(product.getCost());
         } else if (discountType.equals(DiscountType.NEWYEAR)) {
             productStrategy = new StrategyNewYear();
-            productStrategy.countDiscount(product);
+            productStrategy.countDiscount(product.getCost());
         }
     }
 

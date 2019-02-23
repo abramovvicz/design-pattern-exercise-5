@@ -30,7 +30,7 @@ public class Product {
         this.description = description;
     }
 
-    public double getCost() {
+    public Product getCost() {
         return cost;
     }
 
