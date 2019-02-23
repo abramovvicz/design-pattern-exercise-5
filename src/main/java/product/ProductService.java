@@ -14,7 +14,7 @@ public class ProductService {
     public static double newYearDiscount(double cost) {
         return 0.2 * cost;
     }
-
+///test git
 
 //    public void chooseDiscount(Product product, DiscountType discountType) {
 //        ProductStrategy productStrategy;
