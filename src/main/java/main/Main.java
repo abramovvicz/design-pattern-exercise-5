@@ -2,6 +2,7 @@ package main;
 
 import product.Product;
 import product.ProductService;
+import strategry.DiscountType;
 
 import java.util.Arrays;
 import java.util.List;
@@ -41,6 +42,13 @@ public class Main {
         System.out.println("\n\nEaster time ...");
         products.forEach(p->p.setDiscount(ProductService.easterDiscount(p.getCost())));
         products.forEach(p->p.showProductInfo());
+
+
+        ProductService productService = new ProductService();
+        productService.chooseDiscount(productOne, DiscountType.CHRISTMAS);
+
+
+
 
     }
 }
