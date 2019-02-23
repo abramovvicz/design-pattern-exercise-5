@@ -30,9 +30,9 @@ public class Product {
         this.description = description;
     }
 
-    public Product getCost() {
-        return cost;
-    }
+//    public Product getCost() {
+//        return cost;
+//    }
 
     public void setCost(double cost) {
         this.cost = cost;
